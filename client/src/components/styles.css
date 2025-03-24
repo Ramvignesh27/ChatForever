@@ -1,0 +1,11 @@
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .scrollable-chat-container {
+    height: 400px;  /* Adjust as needed */
+    overflow-y: auto;
+  }
