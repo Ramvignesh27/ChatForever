@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-      origin: "*", // Allow only your frontend origin
+      origin: "https://chat-forever-client.vercel.app/", // Allow only your frontend origin
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -40,7 +40,7 @@ const server = app.listen(PORT,
     const io = require("socket.io")(server, {
         pingTimeout: 60000,
         cors: {
-          origin: "*",
+          origin: "https://chat-forever-client.vercel.app/",
           // credentials: true,
         },
       });
